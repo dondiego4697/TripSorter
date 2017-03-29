@@ -1,0 +1,21 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js",
+    "webpack": "webpack --config webpack.config.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "exclude": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "express": "^4.15.2",
+    "webpack": "^2.3.2"
+  }
+}
