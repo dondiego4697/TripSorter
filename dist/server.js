@@ -1,28 +1,26 @@
-/**
+/*
+/!**
  * Created by Denis on 29.03.2017.
- */
+ *!/
 'use strict';
 
-var _main = require('./src/main');
+const http = require('http');
+const PORT = process.env.PORT || 3000;
 
-var _main2 = _interopRequireDefault(_main);
+import Main from './main';
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var http = require('http');
-var PORT = process.env.PORT || 3000;
-
-var server = http.createServer(function (req, res) {
+const server = http.createServer((req, res) => {
     res.setHeader('Content-type', 'text/plain');
-    new _main2.default().analyse(req).then(function (response) {
+    new Main().analyse(req).then(response => {
         res.write(response);
         res.end();
-    }).catch(function (err) {
+    }).catch(err => {
         res.write(err);
         res.end();
     });
 });
 
-console.log('Server listen ' + PORT + ' port');
-server.listen(PORT);
+console.log(`Server listen ${PORT} port`);
+server.listen(PORT);*/
+"use strict";
 //# sourceMappingURL=server.js.map

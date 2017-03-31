@@ -15,7 +15,7 @@ var Cards = function () {
     function Cards() {
         _classCallCheck(this, Cards);
 
-        this.arr = [];
+        this._arr = [];
     }
 
     /**
@@ -29,7 +29,7 @@ var Cards = function () {
         key: "init",
         value: function init(cards) {
             try {
-                this.arr = cards;
+                this._arr = cards;
             } catch (err) {
                 return err;
             }
@@ -40,4 +40,4 @@ var Cards = function () {
 }();
 
 exports.default = Cards;
-//# sourceMappingURL=arr.js.map
+//# sourceMappingURL=_arr.js.map

@@ -34,14 +34,13 @@ var Main = function () {
             var _this = this;
 
             return new Promise(function (resolve, reject) {
-                _this.getBody(req).then(function (body) {
+                _this._getBody(req).then(function (body) {
                     var cards = new _cards2.default();
-                    try {
-                        cards = JSON.parse(body);
-                    } catch (err) {
-                        reject(err.toString());
-                    }
-                    cards.sort();
+                    cards.createTripDescription(body).then(function (response) {
+                        resolve(JSON.stringify(response));
+                    }).catch(function (err) {
+                        console.log('analyse=' + err);
+                    });
                 });
             });
         }
@@ -53,8 +52,8 @@ var Main = function () {
          */
 
     }, {
-        key: 'getBody',
-        value: function getBody(req) {
+        key: '_getBody',
+        value: function _getBody(req) {
             var body = [];
             return new Promise(function (resolve) {
                 req.on('data', function (chunk) {

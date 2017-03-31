@@ -1,0 +1,49 @@
+[
+  {
+    "from": "Barnaul",
+    "to": "Chicago",
+    "transport": "plane",
+    "transport_info": {
+      "gate": "45B",
+      "flight": "SK455",
+      "seat": "11"
+    }
+  },
+  {
+    "from": "Dixi",
+    "to": "Ekaterinburg",
+    "transport": "car",
+    "transport_info": {
+      "number": "u1231a"
+    }
+  },
+  {
+    "from": "Amsterdam",
+    "to": "Barnaul",
+    "transport": "plane",
+    "transport_info": {
+      "gate": "123Z",
+      "flight": "ZQ1001",
+      "seat": "31"
+    },
+    "info": "Baggage drop at ticket counter 344"
+  },
+  {
+    "from": "Chicago",
+    "to": "Dixi",
+    "transport": "train",
+    "transport_info": {
+      "number": "3",
+      "seat": "99"
+    }
+  },
+  {
+    "from": "Ekaterinburg",
+    "to": "Vladivostok",
+    "transport": "train",
+    "transport_info": {
+      "number": "7",
+      "seat": "14"
+    }
+  }
+]
