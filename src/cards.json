@@ -10,7 +10,7 @@
     }
   },
   {
-    "from": "Dixi",
+    "from": "Dalnerechensk",
     "to": "Ekaterinburg",
     "transport": "car",
     "transport_info": {
@@ -30,7 +30,7 @@
   },
   {
     "from": "Chicago",
-    "to": "Dixi",
+    "to": "Dalnerechensk",
     "transport": "train",
     "transport_info": {
       "number": "3",

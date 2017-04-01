@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../src/support/sort.js"],"names":["Sort"],"mappings":";;;;;;;;AAAA;;;IAGqBA,I;;;;kBAAAA,I","file":"sort.js","sourcesContent":["/**\r\n * Created by Denis on 31.03.2017.\r\n */\r\nexport default class Sort{\r\n    \r\n}"]}
