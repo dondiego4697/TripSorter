@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import Cards from './src/cards';
+import Cards from './src/Cards';
 let fs = require('fs');
 
 fs.readFile('./src/cards.json', 'utf8', (err, data) => {
